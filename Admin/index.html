@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>관리자 페이지</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <!-- 상단 메뉴바 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a href="./index.html" class="navbar-brand">관리자 페이지</a>
+        <!-- 햄버거 -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbar" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 메뉴들 -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarMenu">
+            <div class="navbar-nav">
+                <a href="./index.html" class="nav-item nav-link active">대시보드</a>
+                <a href="./event.html" class="nav-item nav-link">이벤트</a>
+                <a href="./blog.html" class="nav-item nav-link">블로그</a>
+                <a href="./user.html" class="nav-item nav-link">회원</a>
+            </div>
+            <div class="navbar-nav mr-2">
+                <a href="./userLogin.html" class="nav-item nav-link">로그인</a>
+                <a href="./userLogout.html" class="nav-item nav-link">로그아웃</a>
+                <a href="./userEdit.html" class="nav-item nav-link">관리자 정보 수정</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="header">
+        <div class="container p-3 bg-dark text-white">
+            <div class="row">
+                <div class="col-9 info">
+                    <h4>
+                        <img src="img/settings.svg" alt="" class="mr-3">
+                        대시보드 <small>페이지를 관리하세요.</small>
+                    </h4>
+                </div>
+                <!-- 드롭다운 -->
+                <div class="col-3">
+                    <div class="dropdown btn-group float-right">
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            관리목록 ▼
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="./index.html" class="dropdown-item active">대시보드</a>
+                            <a href="./event.html" class="dropdown-item">이벤트</a>
+                            <a href="./blog.html" class="dropdown-item">블로그 관리</a>
+                            <a href="./user.html" class="dropdown-item">회원 관리</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
